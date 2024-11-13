@@ -1,0 +1,118 @@
+@import url("./default.css");
+@import url("./fonts.css");
+html{
+    scroll-behavior: smooth;
+}
+body, input, a{
+    font-family: "Montserrat", sans-serif;
+    color: white;
+}
+h1, h2, h3, h4, h5, h6{
+    font-family: "El Messiri", sans-serif;
+}
+body{
+    background-color: #162831;
+}
+.container{
+    width: 1300px;
+    margin: 0 auto;
+}
+h1{
+    font-size: 64px;
+}
+h2{
+    font-size: 42px;
+}
+h3{
+    font-size: 24px;
+}
+h4{
+    font-size: 21px;
+}
+h5{
+    font-size: 18px;
+}
+.flex-row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #162831;
+    padding: 30px 0;
+    z-index: 999;
+}
+nav{
+    width: 50%;
+}
+nav ul{
+    gap: 8px;
+}
+nav a{
+    font-size: 14px;
+    padding: 4px;
+    border-bottom: 1px solid transparent;
+    transition: 400ms;
+}
+nav a:hover{
+    border-color: white;
+}
+.btn{
+    background-color: #018ABE;
+    border-radius: 3px;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    padding: 9px 15px;
+}
+.invert{
+    color: #018abe;
+    background-color: white;
+}
+main{
+    margin-top: 140px;
+}
+#main-section{
+    width: 100%;
+    padding-top: 40%;
+    background: url(../img/aqua.jpg) no-repeat center;
+    background-size: cover;
+    border-radius: 10px;
+    position: relative;
+}
+#main-section .content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+#main-section .title{
+    justify-content: center;
+    gap: 10%;
+    margin-bottom: 50px;
+}
+#sessions-section .title{
+    width: 37%;
+    margin: 150px auto 100px;
+}
+#sessions-section .grid-row{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 258px 258px;
+    gap: 24px;
+}
+.sessions-catalog .session-item:first-child{
+    grid-row: 1 / 3;
+}
+.sessions-catalog .session-item{
+    padding: 30px 40px;
+    display: flex;
+    flex-direction: column-reverse;
+    background: #000;
+    border-radius: 10px;
+}
